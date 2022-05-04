@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="En Macreamé realizamos piezas decorativas de macramé para embellecer tus espacios. Trabajo artesanal y personalizado. Conseguí tus espejos, mandalas, armá tus sets y más.">
+    <meta name="keywords" content="Macramé, deco, decoración, hecho a mano, artesanal, espejos, mandalas, sets">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +13,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/63effeafca.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Maven+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/estilo.scss">
-    <title>Bievenide a Macreamé</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Bienvenides a Macreamé</title>
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-verde">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Macreamé: hecho a mano</a>
+          <a class="navbar-brand" href="#"><img src="./img/5480067.jpg" alt="logo macreamé" width="80px">  Macreamé</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./nav/inicio.html">Inicio</a>
@@ -42,29 +44,45 @@
       </nav>
     </header>
     <main class="bienvenida">
-        <div class="info_content">
+      <div class="info-content">
         <h3 class="h3-index">Hecho a mano</h3>
         <h1 class="h1-index">Macreamé: creaciones en macramé</h1>
         <p class="p-index">Hacemos cada pieza artesanalmente y con amor en cada trenzado, porque sabemos que te llega. La magia está en nuestras manos.</p>
-        <a href="./nav/home.html">
-            <input class="btn" type="button" value= "Ver productos">
+        <a href="./nav/productos.html">
+        <input class="btn" type="button" value= "Ver productos">
         </a>
-        </div>
+      </div>
     </main>
-    <footer class="footer"> <!--footer-->
-        <div class="contact">
-            <i class="fa-regular fa-envelope"></i>
-            <h3 class="h3-footer">hola@macreame.com</h3>
+    <footer class="pie-pagina"> <!--footer-->
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="./img/5480067.jpg" alt="logo de macreame">
+            </a> 
+          </figure>
         </div>
-        <div class="social-network">
-            <i class="fa-brands fa-instagram"></i>
-            <h3 class="h3-footer">Seguinos</h3>
+        <div class="box">
+          <h2>Hecho a mano</h2>
+          <p>Hacemos cada pieza artesanalmente y con amor en cada trenzado.</p>
+          <p>La magia está en nuestras manos</p>
         </div>
+        <div class="box">
+          <h2>Seguinos</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2022 <b>Macreamé: creaciones en macramé</b> - Todos los Derechos Reservados.</small>
+      </div>
     </footer>
-    <script src="./js/wow.win.js"></script>
-    <script>new WOW().init();</script>
-    <script src="js/script.js"></script>
+  <script src="../js/wow.win.js"></script>
+  <script>new WOW().init();</script>
+  <script src="../js/script.js"></script>
 </body>
-</html>
-</body>
-</html>
+</html> 
