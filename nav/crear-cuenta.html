@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="En Macreamé te enseñamos cómo cuidar y mantener tus piezas en perfecto estado, sus tejidos y colores por más tiempo">
-    <meta name="keywords" content="Macramé, consejos, cuidados, cuidar, limpiar, mantener, decoración">
+    <meta name="description" content="Creá tu cuenta en Macreamé para llevar el control de tus pedidos y comprar más rápido">
+    <meta name="keywords" content="Macramé, cuenta, crear cuenta, gestiones">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/63effeafca.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Maven+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
-    <title>Cuidados y consejos para tus piezas de macramé</title>
+    <title>Crear cuenta</title>
 </head>
 <body>
     <header>
@@ -42,39 +42,47 @@
                 <a class="btn btn-outline-success" href="../nav/iniciar-sesion.html" role="button">Iniciar sesión</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-success" href="../nav/crear-cuenta.html" role="button">Crear cuenta</a> 
-            </li>
+                <a class="btn btn-outline-success" href="../nav/crear-cuenta.html" role="button">Crear cuenta</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <h1 class="h1-t wow animate__animated animate__fadeInDownBig">Macreamé: creaciones en macramé</h1>
-    <main class="mainc"> 
-        <h2 class="h2-c">Conocé los mejores consejos para cuidar tus piezas de macramé</h2>
-        <section class="contenedor">
-            <div class="consejos">
-                <h3>Seguí estos consejos</h3>
-                <p class="consejo">• No humedezcas tu pieza. Mantenla en un lugar fresco y seco, libre de humedad.
-                </p> 
-                <p class="consejo">• Las piezas están realizadas para durar muchos años en intactas condiciones, preservala como cualquier otro ítem decorativo.
-                </p>
-                <p class="consejo">• Si tu pieza es de algodón de color, tené en cuenta que puede verse afectado el mismo por la exposición prolongada a la luz directa del sol. 
-                </p>
-                <p class="consejo">• No intentes "ajustar" los nudos o cambiar algo de la trama. Las piezas se elaboran mediante puntos de tejido para conformar un todo, si modificas una, modificas toda la pieza.
-                </p>
-                <p class="consejo">• Peina con regularidad los flecos de tu pieza, para que se mantengan prolijos con el paso del tiempo.
-                </p>
+    <main>
+        <section>
+            <form class="form">
+            <h2 class="form-title">Crear cuenta</h2>
+            <p class="form-paragraph">Llevá el control de tus pedidos y comprá más rápido</p>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre"placeholder="Ej. Juan">
+                    <span class="form-line"></span>
                 </div>
-            <div class="cuidados">
-                <h3>Cuidados</h3>
-                <div class="cuidado"></div><iframe width="560" height="315" src="https://www.youtube.com/embed/n9CUcOjYLds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <p class="cuidado">• Para limpiar tu pieza de macramé, utiliza un paño seco o un cepillo suave para retirar el polvo.
-                </p>
-                <p class="cuidado">• Limpia tu pieza de macramé con regularidad. Si permites que se deposite en polvo en ella, luego será mas dificil quitarlo. 
-                </p>
-            </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Ej: Pérez">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" placeholder="hola@macreame.com" required>
+                </div>
+                <div>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" name="contrasena" required>
+                    
+                </div>
+                <div>
+                    <label for="newsletter">Quiero enterarme de las novedades y descuentos</label>
+                    <input type="checkbox" name="acepta" value="1">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar datos">
+                    <input type="submit" value="Borrar datos">
+                </div>
+            </form>
         </section>
     </main>
     <footer class="pie-pagina"> <!--footer-->
@@ -110,5 +118,3 @@
   <script src="../js/script.js"></script>
 </body>
 </html>
-
-

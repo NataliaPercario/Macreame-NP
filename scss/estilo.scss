@@ -2,6 +2,7 @@ $verdehf: #c8ddb2;
 $body: #E6E6E3;
 $lila: #d3a0dd;
 $griss: #636060;
+$gradient: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
 
 /*Navbar*/
 .bg-verde {
@@ -11,6 +12,10 @@ $griss: #636060;
 .navbar-brand {
     padding-left: 50px;
 }
+.nav-item2 {
+    justify-content: flex-end !important;
+}
+
 
 /*Mixins*/
 @mixin h2 {
@@ -57,13 +62,13 @@ body {
         grid-template-rows: repeat(8, 1fr);
     
         .info-content {
-        grid-column: 2 / 8;
+        grid-column: 6 / 10;
         grid-row: 2 / 6;
         color:beige;
         font-family: 'Maven Pro', sans-serif;
         
             .h3-index {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-weight: 300;
             font-family: 'Maven Pro', sans-serif;
             color: #A99EE4;
@@ -77,18 +82,19 @@ body {
             }
             .h1-index {
                 font-family: 'Clicker script', cursive;
-                font-size: 2.5em;
+                font-size: 3.5rem;
                 line-height: 90%;
                 color: rgb(235, 232, 232); 
-                text-shadow: .5px .5px 4px rgb(31, 29, 29);
-                }
+                text-shadow: 2px 2px 4px rgb(31, 29, 29);
+            }
             .p-index {
+                font-size: 1.2rem;
                 font-weight: bold;
                 font-family: 'Maven Pro', sans-serif;
                 color: rgb(44, 39, 39);
                 text-shadow: .3px .3px 5px #DBE6CF;
                 padding-bottom: 10px;
-                }
+            }
             .btn {
                 font-size: .9rem;
                 font-weight: bold;
@@ -133,7 +139,8 @@ body {
     .ofertas {
         font-family: 'Maven Pro', sans-serif;
         background: rgb(240,236,209);
-        background: linear-gradient(90deg, rgba(240,236,209,1) 0%, rgba(226,204,230,1) 48%, rgba(208,204,230,1) 100%);
+        background: $gradient;
+        box-shadow: 0 5px 80px -5px rgba(0, 0, 0, 0.312);
         margin-top: 20px;
         padding-top: 10px;
         margin-right: 150px;
@@ -207,7 +214,6 @@ body {
         }
     }
         
-    
 
 /*consejos y cuidados*/ 
 .mainc {
@@ -262,6 +268,9 @@ body {
     margin: 3rem;
 }
 
+.accordion {
+    box-shadow: 0 4px 60px -5px rgba(0, 0, 0, 0.312);
+}
 .accordion-button {
     position: relative;
     display: flex;
@@ -273,16 +282,40 @@ body {
     font-family: 'Maven Pro', sans-serif;
     text-align: center;
     font-style: bolder;
-    background-color: rgba(233, 214, 214, 0.582);
+    background: $gradient;
     border: 1px;
     border-radius: 30px;
     overflow-anchor: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
 }
 
+.accordion-header {
+    background: $gradient;
+}
+.accordion-body {
+    margin-left: 3rem;
+    margin-right: 10rem;
+    color: $griss;
+}
 
+.accordion-collapse {
+    background: $gradient;
+}   
 
+/*Productos*/
+main {
+   background-color: $body;
+       
+    .img-container {
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-bottom: 10em;
+    }
+    
+}
 
 /*Imports*/
 @import "footer";
+@import "forms";
 @import "mediasQ";
+
